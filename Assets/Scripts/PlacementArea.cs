@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlacementArea : MonoBehaviour
 {
-    [SerializeField] GameObject plantPrefab = null;
+    Plant plantPrefab = null;
 
     private void OnMouseDown()
     {
         PlacePlant(PlaceClicked());
+    }
+
+    public void SelectPlant(Plant selectPlant)
+    {
+        plantPrefab = selectPlant;
     }
 
     private Vector2 PlaceClicked()
@@ -30,6 +35,6 @@ public class PlacementArea : MonoBehaviour
 
     private void PlacePlant(Vector2 placePos)
     {
-        GameObject onePlant = Instantiate(plantPrefab, placePos, Quaternion.identity) as GameObject;
+        Plant onePlant = Instantiate(plantPrefab, placePos, Quaternion.identity) as Plant;
     }
 }
