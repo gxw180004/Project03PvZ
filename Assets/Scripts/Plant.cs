@@ -5,4 +5,9 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     [SerializeField] int sunCost = 50;
+
+    public int GetSunCost()
+    {
+        return sunCost;
+    }
 }

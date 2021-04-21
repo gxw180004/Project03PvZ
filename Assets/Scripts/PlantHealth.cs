@@ -19,6 +19,8 @@ public class PlantHealth : MonoBehaviour
         {
             PlantDie();
         }
+
+        Debug.Log(currentHealth);
     }
 
     public void PlantTakeDamage(float damage)

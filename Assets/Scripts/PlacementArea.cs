@@ -8,12 +8,24 @@ public class PlacementArea : MonoBehaviour
 
     private void OnMouseDown()
     {
-        PlacePlant(PlaceClicked());
+        PlacingPlant(PlaceClicked());
     }
 
     public void SelectPlant(Plant selectPlant)
     {
         plantPrefab = selectPlant;
+    }
+
+    private void PlacingPlant(Vector2 placePos)
+    {
+        var sunDisplay = FindObjectOfType<SunDisplay>();
+        int plantCost = plantPrefab.GetSunCost();
+
+        if(sunDisplay.EnoughSun(plantCost))
+        {
+            PlacePlant(placePos);
+            sunDisplay.SpendSun(plantCost);
+        }
     }
 
     private Vector2 PlaceClicked()

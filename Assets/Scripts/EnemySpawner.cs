@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject EnemyPrefab = null;
+    [SerializeField] Enemy EnemyPrefab = null;
 
     bool spawn = true;
     float randomSpawnTime;
     int minWaitTime = 1;
-    int maxWaitTime = 10;
+    int maxWaitTime = 5;
 
     IEnumerator Start()
     {
@@ -22,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        Instantiate(EnemyPrefab, transform.position, Quaternion.identity);
+        Enemy oneEnemy = Instantiate(EnemyPrefab, transform.position, Quaternion.identity) as Enemy;
+
+        oneEnemy.transform.parent = transform;
     }
 }
