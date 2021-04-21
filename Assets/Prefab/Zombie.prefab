@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49535f25c313444b801e570bcc4e42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBlocked: 0
 --- !u!114 &5351266431287444324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,4 +185,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccbbf9f0e90bab43aea7af9c07a634e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyAttackDamage: 5
+  enemyAttackDamage: 50

@@ -13,8 +13,18 @@ public class Enemy : MonoBehaviour
         isBlocked = false;
     }
 
+    private void Update()
+    {
+        if (!currentTarget)
+        {
+            isBlocked = false;
+        }
+    }
+
     public void Attack(GameObject target)
     {
         currentTarget = target;
     }
+
+
 }

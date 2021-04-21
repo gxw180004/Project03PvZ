@@ -18,18 +18,14 @@ public class ShootPea : MonoBehaviour
 
     private void Update()
     {
-        /*
-        if (fireCountDown <= 0f)
-        {
-            Shoot();
-            fireCountDown = 1f / fireRate;
-        }
-        fireCountDown -= Time.deltaTime;
-        */
         if (LaneTarget())
         {
-            Debug.Log("shoot");
-            //shoot
+            if (fireCountDown <= 0f)
+            {
+                //Shoot();
+                fireCountDown = 1f / fireRate;
+            }
+            fireCountDown -= Time.deltaTime;
         }
         else
         {

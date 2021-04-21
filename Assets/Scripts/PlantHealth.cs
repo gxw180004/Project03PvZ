@@ -19,13 +19,16 @@ public class PlantHealth : MonoBehaviour
         {
             PlantDie();
         }
-
-        Debug.Log(currentHealth);
     }
 
     public void PlantTakeDamage(float damage)
     {
         currentHealth -= damage;
+    }
+
+    public float CurrentHealth()
+    {
+        return currentHealth;
     }
 
     private void PlantDie()

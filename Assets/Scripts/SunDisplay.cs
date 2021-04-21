@@ -19,9 +19,9 @@ public class SunDisplay : MonoBehaviour
         sunAmountText.text = initialSunAmount.ToString();
     }
 
-    public void PickUpSun()
+    public void PickUpSun(int sunAmount)
     {
-        initialSunAmount += 25;
+        initialSunAmount += sunAmount;
         updateSunAmount();
     }
 

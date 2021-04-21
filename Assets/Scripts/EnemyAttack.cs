@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] float enemyAttackDamage = 5f;
+    [SerializeField] float enemyAttackDamage = 50f;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collideObject = collision.gameObject;
-
+ 
         if (collision.GetComponent<Plant>())
         {
             GetComponent<Enemy>().isBlocked = true;
-            Debug.Log("being attack");
+            GetComponent<Enemy>().Attack(collideObject);
             Plant collidePlant = collideObject.GetComponent<Plant>();
             collidePlant.GetComponent<PlantHealth>().PlantTakeDamage(enemyAttackDamage);
         }
+
     }
 }

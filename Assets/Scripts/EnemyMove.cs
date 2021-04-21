@@ -6,15 +6,13 @@ public class EnemyMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 2f;
 
-    Enemy enemy;
-
     void Update()
     {
-        if(enemy.isBlocked == false)
+        if(GetComponent<Enemy>().isBlocked == false)
         {
             transform.Translate(Vector2.left * Time.deltaTime * moveSpeed);
         }
-        else
+        else if(GetComponent<Enemy>().isBlocked == true)
         {
             transform.Translate(Vector2.zero);
         }
