@@ -6,24 +6,33 @@ public class Enemy : MonoBehaviour
 {
     GameObject currentTarget;
 
-    public bool isBlocked;
-
-    private void Start()
+    private void Update()
     {
-        isBlocked = false;
+        updateAnimationState();
     }
 
-    private void Update()
+    private void updateAnimationState()
     {
         if (!currentTarget)
         {
-            isBlocked = false;
+            GetComponent<Animator>().SetBool("isAttacking", false);
         }
     }
 
     public void Attack(GameObject target)
     {
+        GetComponent<Animator>().SetBool("isAttacking", true);
         currentTarget = target;
+    }
+
+    public void AttackCurrentTarget(float damage)
+    {
+        if (!currentTarget) { return; }
+        PlantHealth health = currentTarget.GetComponent<PlantHealth>();
+        if (health)
+        {
+            health.PlantTakeDamage(damage);
+        }
     }
 
 

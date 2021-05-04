@@ -10,10 +10,12 @@ public class ShootPea : MonoBehaviour
 
     float fireCountDown = 0f;
     EnemySpawner laneSpawner;
+    Animator animator;
 
     private void Start()
     {
         SetLaneSpawners();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -22,15 +24,15 @@ public class ShootPea : MonoBehaviour
         {
             if (fireCountDown <= 0f)
             {
-                //Shoot();
+                animator.SetBool("isAttacking",true);
+                Shoot();
                 fireCountDown = 1f / fireRate;
             }
             fireCountDown -= Time.deltaTime;
         }
         else
         {
-            Debug.Log("sit and wait");
-            //dont shoot
+            animator.SetBool("isAttacking", false);
         }
     }
 

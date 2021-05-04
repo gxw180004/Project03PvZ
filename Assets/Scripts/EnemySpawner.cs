@@ -5,11 +5,11 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] Enemy EnemyPrefab = null;
+    [SerializeField] int minWaitTime = 15;
+    [SerializeField] int maxWaitTime = 30;
 
     bool spawn = true;
     float randomSpawnTime;
-    int minWaitTime = 1;
-    int maxWaitTime = 5;
 
     IEnumerator Start()
     {

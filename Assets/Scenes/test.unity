@@ -194,12 +194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144849490}
     m_Modifications:
-    - target: {fileID: 1540305105366302044, guid: ceff8c3747caab945aeaafa381ab5bfc,
-        type: 3}
-      propertyPath: EnemyPrefab
-      value: 
-      objectReference: {fileID: 6709042738378216160, guid: c3b55afd86268e640801b93f52e19b9b,
-        type: 3}
     - target: {fileID: 1747341823405539685, guid: ceff8c3747caab945aeaafa381ab5bfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -280,12 +274,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144849490}
     m_Modifications:
-    - target: {fileID: 1540305105366302044, guid: ceff8c3747caab945aeaafa381ab5bfc,
-        type: 3}
-      propertyPath: EnemyPrefab
-      value: 
-      objectReference: {fileID: 6709042738378216160, guid: c3b55afd86268e640801b93f52e19b9b,
-        type: 3}
     - target: {fileID: 1747341823405539685, guid: ceff8c3747caab945aeaafa381ab5bfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -359,6 +347,107 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 136427537}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &288753463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288753466}
+  - component: {fileID: 288753465}
+  - component: {fileID: 288753464}
+  m_Layer: 0
+  m_Name: ZombieWalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &288753464
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288753463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4e9677373a67f7488df7b79d39aa138, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &288753465
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288753463}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 30
+  m_Sprite: {fileID: 21300000, guid: 9224ab8079deb4844ba12ad1b6028475, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.76, y: 2.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &288753466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288753463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.8356, y: 3.0586, z: 0}
+  m_LocalScale: {x: 0.39885446, y: 0.39885446, z: 0.39885446}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370663390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,12 +1102,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144849490}
     m_Modifications:
-    - target: {fileID: 1540305105366302044, guid: ceff8c3747caab945aeaafa381ab5bfc,
-        type: 3}
-      propertyPath: EnemyPrefab
-      value: 
-      objectReference: {fileID: 6709042738378216160, guid: c3b55afd86268e640801b93f52e19b9b,
-        type: 3}
     - target: {fileID: 1747341823405539685, guid: ceff8c3747caab945aeaafa381ab5bfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1311,7 +1394,7 @@ GameObject:
   - component: {fileID: 1590839316}
   - component: {fileID: 1590839317}
   m_Layer: 0
-  m_Name: Peashooter
+  m_Name: peashotter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1325,8 +1408,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590839313}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -470.5, y: -4.4, z: 0}
-  m_LocalScale: {x: 71.882965, y: 68.861694, z: 0}
+  m_LocalPosition: {x: -470.5, y: -4.400015, z: 0}
+  m_LocalScale: {x: 28.493786, y: 27.296179, z: 0}
   m_Children: []
   m_Father: {fileID: 1079094891}
   m_RootOrder: 1
@@ -1370,7 +1453,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: 4cbd1338e3fc07744a8a826c8e536d6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c40ac8be6022f6247ab4510473e1b6b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1408,18 +1491,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.050370544, y: -0.05755949}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.85, y: 1.77}
+    oldSize: {x: 4.15, y: 4.24}
     newSize: {x: 4.15, y: 4.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0920084, y: 2.052708}
+  m_Size: {x: 4.15, y: 4.24}
   m_EdgeRadius: 0
 --- !u!1 &1643883891
 GameObject:
@@ -1623,8 +1706,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913815234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -647.8, y: 13, z: 0}
-  m_LocalScale: {x: 100.90331, y: 96.66229, z: 0}
+  m_LocalPosition: {x: -665, y: 3.2999573, z: 0}
+  m_LocalScale: {x: 28.142605, y: 26.959759, z: 0}
   m_Children: []
   m_Father: {fileID: 1079094891}
   m_RootOrder: 0
@@ -1668,7 +1751,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: e14e2db642a67e14c9811c7a7a6052ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da960b65bdbea55479722cb0286f7925, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1706,18 +1789,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.041009456, y: -0.17427438}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.85, y: 1.85}
+    oldSize: {x: 4.37, y: 4.99}
     newSize: {x: 4.37, y: 4.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6018372, y: 1.5865301}
+  m_Size: {x: 4.37, y: 4.99}
   m_EdgeRadius: 0
 --- !u!1 &2058712655
 GameObject:
@@ -1807,12 +1890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144849490}
     m_Modifications:
-    - target: {fileID: 1540305105366302044, guid: ceff8c3747caab945aeaafa381ab5bfc,
-        type: 3}
-      propertyPath: EnemyPrefab
-      value: 
-      objectReference: {fileID: 6709042738378216160, guid: c3b55afd86268e640801b93f52e19b9b,
-        type: 3}
     - target: {fileID: 1747341823405539685, guid: ceff8c3747caab945aeaafa381ab5bfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1893,12 +1970,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144849490}
     m_Modifications:
-    - target: {fileID: 1540305105366302044, guid: ceff8c3747caab945aeaafa381ab5bfc,
-        type: 3}
-      propertyPath: EnemyPrefab
-      value: 
-      objectReference: {fileID: 6709042738378216160, guid: c3b55afd86268e640801b93f52e19b9b,
-        type: 3}
     - target: {fileID: 1747341823405539685, guid: ceff8c3747caab945aeaafa381ab5bfc,
         type: 3}
       propertyPath: m_LocalPosition.x

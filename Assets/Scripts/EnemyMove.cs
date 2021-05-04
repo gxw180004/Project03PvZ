@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 2f;
+    float moveSpeed = 0.5f;
 
     void Update()
     {
-        if(GetComponent<Enemy>().isBlocked == false)
-        {
-            transform.Translate(Vector2.left * Time.deltaTime * moveSpeed);
-        }
-        else if(GetComponent<Enemy>().isBlocked == true)
-        {
-            transform.Translate(Vector2.zero);
-        }
-        
+        transform.Translate(Vector2.left * Time.deltaTime * moveSpeed);
+    }
+
+    public void SetMovementSpeed(float speed)
+    {
+        moveSpeed = speed;
     }
 }
