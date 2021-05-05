@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlacementArea : MonoBehaviour
 {
     Plant plantPrefab = null;
+    [SerializeField] AudioClip plantSFX = null;
 
     private void OnMouseDown()
     {
         PlacingPlant(PlaceClicked());
+        AudioSource.PlayClipAtPoint(plantSFX, transform.position);
     }
 
     public void SelectPlant(Plant selectPlant)

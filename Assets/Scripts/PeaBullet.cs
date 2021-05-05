@@ -6,6 +6,7 @@ public class PeaBullet : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float bulletDamage = 10f;
+    [SerializeField] AudioClip damageSFX = null;
 
     void Update()
     {
@@ -16,6 +17,7 @@ public class PeaBullet : MonoBehaviour
     {
         var enemyHealth = collision.GetComponent<EnemyHealth>();
         enemyHealth.EnemyTakeDamage(bulletDamage);
+        AudioSource.PlayClipAtPoint(damageSFX, transform.position);
         Destroy(gameObject);
     }
 }

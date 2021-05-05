@@ -20,6 +20,9 @@ public class EnemyAttack : MonoBehaviour
         if (collision.GetComponent<Plant>())
         {
             GetComponent<Enemy>().Attack(collideObject);
+            GetComponent<AudioSource>().enabled = true;
+            AudioSource sfx = GetComponent<AudioSource>();
+            sfx.Play();
             Plant collidePlant = collideObject.GetComponent<Plant>();
             collidePlant.GetComponent<PlantHealth>().PlantTakeDamage(enemyAttackDamage);
         }

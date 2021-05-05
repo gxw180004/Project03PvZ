@@ -7,6 +7,7 @@ public class ShootPea : MonoBehaviour
     [SerializeField] GameObject peaPrefab = null;
     [SerializeField] Transform firePoint = null;
     [SerializeField] float fireRate = 1f;
+    [SerializeField] AudioClip pickUpSFX = null;
 
     float fireCountDown = 0f;
     EnemySpawner laneSpawner;
@@ -22,13 +23,7 @@ public class ShootPea : MonoBehaviour
     {
         if (LaneTarget())
         {
-            if (fireCountDown <= 0f)
-            {
-                animator.SetBool("isAttacking",true);
-                Shoot();
-                fireCountDown = 1f / fireRate;
-            }
-            fireCountDown -= Time.deltaTime;
+            animator.SetBool("isAttacking", true);
         }
         else
         {
@@ -66,6 +61,7 @@ public class ShootPea : MonoBehaviour
     private void Shoot()
     {
         GameObject peaBullet = Instantiate(peaPrefab, firePoint.position, Quaternion.identity) as GameObject;
+        AudioSource.PlayClipAtPoint(pickUpSFX, transform.position);
         Destroy(peaBullet, 4f);
     }
 }

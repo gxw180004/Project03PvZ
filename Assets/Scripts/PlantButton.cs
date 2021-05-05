@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlantButton : MonoBehaviour
 {
     [SerializeField] Plant plantPrefab = null;
+    [SerializeField] AudioClip pickUpSFX = null;
 
     private void OnMouseDown()
     {
         var buttons = FindObjectsOfType<PlantButton>();
+
+        AudioSource.PlayClipAtPoint(pickUpSFX,transform.position);
 
         foreach(PlantButton button in buttons)
         {

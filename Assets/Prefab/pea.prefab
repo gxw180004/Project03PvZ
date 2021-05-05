@@ -134,4 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  bulletDamage: 1
+  bulletDamage: 15
+  damageSFX: {fileID: 8300000, guid: 64866a2f4c757c940b8d96ca88e673dc, type: 3}

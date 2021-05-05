@@ -7,7 +7,6 @@ public class SceneLoader : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        Debug.Log("clicked");
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Flythrough");
     }
 }

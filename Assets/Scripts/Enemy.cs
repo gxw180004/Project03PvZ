@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] AudioClip brainSFX = null;
+
     GameObject currentTarget;
+
+    private void Awake()
+    {
+        AudioSource.PlayClipAtPoint(brainSFX, transform.position);
+    }
 
     private void Update()
     {
@@ -16,6 +23,7 @@ public class Enemy : MonoBehaviour
         if (!currentTarget)
         {
             GetComponent<Animator>().SetBool("isAttacking", false);
+            GetComponent<AudioSource>().enabled = false;
         }
     }
 

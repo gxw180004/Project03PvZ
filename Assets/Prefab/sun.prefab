@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 16
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: 07c185d3052147b439a2613bbd5a4a74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunPickupAmount: 25
+  pickUpSFX: {fileID: 8300000, guid: ae375d50d233a864dbf6029339a03f31, type: 3}
 --- !u!50 &-115880836197194182
 Rigidbody2D:
   serializedVersion: 4

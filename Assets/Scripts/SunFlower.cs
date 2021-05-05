@@ -18,7 +18,7 @@ public class SunFlower : MonoBehaviour
 
     private void Update()
     {
-        countDown = Random.Range(6f, 11f);
+        countDown = Random.Range(5f, 8f);
 
         if (tempCountDown <= 0)
         {
@@ -31,8 +31,8 @@ public class SunFlower : MonoBehaviour
     private void GenerateSun()
     {
         GameObject oneSun = Instantiate(sunPrefab, generatePoint.position, Quaternion.identity) as GameObject;
-        var rb = oneSun.GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.up;
+        //var rb = oneSun.GetComponent<Rigidbody2D>();
+        //rb.velocity = Vector2.up;
         Destroy(oneSun, 5f);
     }
 }

@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3999455606085724084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.138, y: -0.1171, z: 0}
-  m_LocalScale: {x: 0.42720595, y: 0.42720595, z: 0.42720595}
+  m_LocalPosition: {x: -0.0909, y: -0.0772, z: 0}
+  m_LocalScale: {x: 0.4780841, y: 0.4780841, z: 0.4780841}
   m_Children:
   - {fileID: 1323723777811482991}
   m_Father: {fileID: 0}
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05586326, y: 0}
+  m_Offset: {x: -0.15407377, y: 0.0061612427}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5610511, y: 1.57}
+  m_Size: {x: 1.6564928, y: 1.2043502}
   m_EdgeRadius: 0
 --- !u!114 &2422719264880363760
 MonoBehaviour:
@@ -148,6 +148,7 @@ MonoBehaviour:
     type: 3}
   firePoint: {fileID: 1323723777811482991}
   fireRate: 1
+  pickUpSFX: {fileID: 8300000, guid: eb48660673a2d9643b28343498208506, type: 3}
 --- !u!114 &5180248147113659272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638ac44345bcbd5438a9e80782a87cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sunCost: 50
+  sunCost: 100
 --- !u!114 &755580837260949990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf067b46b78a0354582ee235a06b075d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantHealth: 100
+  plantHealth: 150
 --- !u!1 &6290853870494034025
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6290853870494034025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.879, y: 0.313, z: 0}
+  m_LocalPosition: {x: 0.414, y: 0.313, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3999455606085724083}

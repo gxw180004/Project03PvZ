@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 977ba1df45d2b9947afb9dcdfd4580b6
   - enabled: 1
+    path: Assets/Scenes/Flythrough.unity
+    guid: 239b3b311acb7e040b09f71d3d63d203
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 9fae6d530a6f74947abc5d068c272432
   m_configObjects: {}
