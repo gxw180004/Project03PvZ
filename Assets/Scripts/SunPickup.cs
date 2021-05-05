@@ -17,7 +17,6 @@ public class SunPickup : MonoBehaviour
 
     void playSFX()
     {
-        Debug.Log("test");
         AudioSource.PlayClipAtPoint(pickUpSFX, transform.position);
     }
 }
